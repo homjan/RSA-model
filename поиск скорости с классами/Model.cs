@@ -41,11 +41,19 @@ namespace поиск_скорости_с_классами
 
 
         }
-
+        /// <summary>
+        /// Получить слой
+        /// </summary>
+        /// <returns></returns>
         public double[] getSloi1() {
             return sloj_T1;
         }
 
+        /// <summary>
+        /// Метод Рунге-Кутты - 5 уравнений
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public double[] Runge_Kutta_all(int x) {
             double[] sloj_T2 = new double[Z];
 
@@ -119,7 +127,11 @@ namespace поиск_скорости_с_классами
             ///////////////////////////////////////
             return sloj_T2;
         }
-
+        /// <summary>
+        /// Рунге_Кутты+уровнения переноса 1 порядка
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public double[] Intensity_transfer_1(int x)
         {
             double[] sloj_T2 = new double[Z];
@@ -190,6 +202,11 @@ namespace поиск_скорости_с_классами
             return sloj_T2;
         }
 
+        /// <summary>
+        /// Рунге_Кутты+уровнения переноса 2 порядка
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public double[] Intensity_transfer_2(int x)
         {
             double[] sloj_T2 = new double[Z];

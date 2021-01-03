@@ -22,6 +22,16 @@ namespace поиск_скорости_с_классами
 
         }
 
+        /// <summary>
+        /// Первое ДУ населенности
+        /// </summary>
+        /// <param name="t1">Время</param>
+        /// <param name="n1">населенность 1 уровня</param>
+        /// <param name="n2">населенность 2 уровня</param>
+        /// <param name="n3">населенность 3 уровня</param>
+        /// <param name="n4">населенность 4 уровня</param>
+        /// <param name="A0">Амплитуда</param>
+        /// <returns></returns>
         public double Funkcia1(double t1, double n1, double n2, double n3, double n4, double A0)
         {
             double F;
@@ -32,8 +42,18 @@ namespace поиск_скорости_с_классами
             F = (-1) * n1 * sigma1 * I + n2 / t21; // 1 уравнение
 
             return F;
-        } //Вспомогательная
+        }
 
+        /// <summary>
+        /// Второе ДУ населенности
+        /// </summary>
+        /// <param name="t1">Время</param>
+        /// <param name="n1">населенность 1 уровня</param>
+        /// <param name="n2">населенность 2 уровня</param>
+        /// <param name="n3">населенность 3 уровня</param>
+        /// <param name="n4">населенность 4 уровня</param>
+        /// <param name="A0">Амплитуда</param>
+        /// <returns></returns>
         public double Funkcia2(double t1, double n1, double n2, double n3, double n4, double A0)
         {
             double F;
@@ -44,8 +64,18 @@ namespace поиск_скорости_с_классами
             F = n1 * sigma1 * I - n2 * sigma2 * I - n2 / t21 + n3 / t32; // 2 уравнение
 
             return F;
-        } //Вспомогательная
+        }
 
+        /// <summary>
+        /// Третье ДУ населенности
+        /// </summary>
+        /// <param name="t1">Время</param>
+        /// <param name="n1">населенность 1 уровня</param>
+        /// <param name="n2">населенность 2 уровня</param>
+        /// <param name="n3">населенность 3 уровня</param>
+        /// <param name="n4">населенность 4 уровня</param>
+        /// <param name="A0">Амплитуда</param>
+        /// <returns></returns>
         public double Funkcia3(double t1, double n1, double n2, double n3, double n4, double A0)
         {
             double F;
@@ -55,8 +85,18 @@ namespace поиск_скорости_с_классами
             F = n2 * sigma2 * I - n3 / t32; // 3 уравнение
 
             return F;
-        } //Вспомогательная
+        } 
 
+        /// <summary>
+        /// Четвертое ДУ населенности
+        /// </summary>
+        /// <param name="t1">Время</param>
+        /// <param name="n1">населенность 1 уровня</param>
+        /// <param name="n2">населенность 2 уровня</param>
+        /// <param name="n3">населенность 3 уровня</param>
+        /// <param name="n4">населенность 4 уровня</param>
+        /// <param name="A0">Амплитуда</param>
+        /// <returns></returns>
         public double Funkcia4(double t1, double n1, double n2, double n3, double n4, double A0)
         {
             double F;
@@ -66,8 +106,18 @@ namespace поиск_скорости_с_классами
             // F = n2/t24-n4/t41; // 3 уравнение
             F = 0;
             return F;
-        } //Вспомогательная
+        }
 
+        /// <summary>
+        /// ДУ Интенсивности
+        /// </summary>
+        /// <param name="t1">Время</param>
+        /// <param name="n1">населенность 1 уровня</param>
+        /// <param name="n2">населенность 2 уровня</param>
+        /// <param name="n3">населенность 3 уровня</param>
+        /// <param name="n4">населенность 4 уровня</param>
+        /// <param name="A0">Амплитуда</param>
+        /// <returns></returns>
         public double Funkcia5(double t1, double n1, double n2, double n3, double n4, double A0)
         {
 
